@@ -3,13 +3,21 @@
     "default": {
       "runner": "nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "test", "check:types"]
+        "cacheableOperations": [
+          "build",
+          "test",
+          "check:types"
+        ],
+        "accessToken": "MGY0MjAyNTktOGU5YS00MzA4LWJkMTgtZDNhMzliZWJjYmExfHJlYWQtd3JpdGU="
       }
     }
   },
   "targetDefaults": {
     "build": {
-      "inputs": ["{workspaceRoot}/scripts/*", "{workspaceRoot}/lerna.json"]
+      "inputs": [
+        "{workspaceRoot}/scripts/*",
+        "{workspaceRoot}/lerna.json"
+      ]
     }
   }
 }
